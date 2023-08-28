@@ -1,0 +1,236 @@
+@media (min-width: 768px) {
+    .column {
+      width: 50%;
+    }
+}
+
+body{
+  max-width: 1200px;
+  text-align: center;
+  background-color: #d3dee4;
+}
+
+header{
+  position: sticky;
+  top: 0;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.navbar {
+    background-color: #2e69b1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.navbar-logo {
+    margin-right: 20px;
+}
+  
+.navbar-buttons {
+    margin-left: auto;
+}
+  
+.navbar-button {
+    background-color: #2e69b1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-bottom: white 1px solid;
+}
+
+h1{
+    text-align: center;
+} 
+
+h2{
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: #000000;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.historia {
+  border: 8px black solid;
+  border-style: double;
+  border-color: #003785;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.carrusel {
+    width: 600px; 
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+img{ 
+  border-radius: 10px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.8s ease-in-out;
+}
+  
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.bienvenida {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  text-decoration:dashed
+}
+
+footer{
+  margin-top: 100px;
+}
+
+.ubicacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.logos {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.telefono{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.telefono a{
+  color: #000000;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 32px;
+  width: calc(50% - 30px)
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #2e69b1;
+}
+
+.accordion .accordion-item button [aria-expanded=true] {
+  border-bottom: 1px solid red;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7782a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #4D4D4D;
+}
+
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background-color: currentColor;
+}
+
+.accordion button[aria-expanded=true] {
+  color: #4D4D4D;
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1em;
+}
+
+.profesionales {
+  display: flex;
+}
